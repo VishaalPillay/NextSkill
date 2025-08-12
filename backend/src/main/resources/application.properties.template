@@ -1,0 +1,25 @@
+# server
+server.port=8080
+
+# datasource - fill password locally in application.properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/nextskill_db
+spring.datasource.username=postgres
+spring.datasource.password=REPLACE_WITH_YOUR_PASSWORD
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Use Flyway to manage schema, not Hibernate auto-ddl
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+
+# Flyway
+spring.flyway.enabled=true
+spring.flyway.locations=classpath:db/migration
+spring.flyway.baseline-on-migrate=true
+
+# file upload limits
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+
+# logging
+logging.level.com.nextskill=DEBUG
+logging.level.org.springframework.web=DEBUG
