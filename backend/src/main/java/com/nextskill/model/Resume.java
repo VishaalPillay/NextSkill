@@ -3,7 +3,6 @@ package com.nextskill.model;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,20 +32,41 @@ public class Resume {
     @Column(name = "summary", columnDefinition = "TEXT")
     private String summary;
 
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+
     @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<ResumeSkill> skills = new ArrayList<>();
 
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private LocalDateTime createdAt;
+    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Experience> experiences = new ArrayList<>();
+
+    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Certification> certifications = new ArrayList<>();
+
+    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Project> projects = new ArrayList<>();
 
     @PrePersist
     protected void onCreate() {
         createdAt = LocalDateTime.now();
     }
 
-    // Helper method to synchronize both sides of the relationship
+    // Helper methods to keep relationships in sync
     public void addSkill(ResumeSkill skill) {
         this.skills.add(skill);
         skill.setResume(this);
+    }
+    public void addExperience(Experience experience) {
+        this.experiences.add(experience);
+        experience.setResume(this);
+    }
+    public void addCertification(Certification certification) {
+        this.certifications.add(certification);
+        certification.setResume(this);
+    }
+    public void addProject(Project project) {
+        this.projects.add(project);
+        project.setResume(this);
     }
 }
