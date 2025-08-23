@@ -1,49 +1,41 @@
 package com.nextskill.config;
 
+import com.nextskill.repository.ResumeRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import java.util.Arrays;
-
-/**
- * Application Configuration for NextSkill Resume Parser
- * Provides CORS configuration and other application-wide settings
- */
 @Configuration
-public class ApplicationConfig implements WebMvcConfigurer {
+@RequiredArgsConstructor
+public class ApplicationConfig {
+    private final ResumeRepository repository;
 
-    /**
-     * Configure CORS for cross-origin requests
-     */
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOriginPatterns("*")
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
-                .allowCredentials(true)
-                .maxAge(3600);
+    // This Bean is for your future security setup, it's fine to leave it here.
+    /*
+    @Bean
+    public UserDetailsService userDetailsService() {
+        // ... your existing code ...
     }
+    */
 
     /**
-     * CORS configuration source for more detailed control
+     * This is the new, correct way to configure CORS globally for your application.
+     * It allows your frontend (running on http://localhost:3000) to communicate
+     * with your backend, including sending credentials.
      */
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOriginPatterns(Arrays.asList("*"));
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        configuration.setAllowedHeaders(Arrays.asList("*"));
-        configuration.setAllowCredentials(true);
-        configuration.setMaxAge(3600L);
-        
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**") // Apply to all endpoints in the application
+                        .allowedOrigins("http://localhost:3000") // Explicitly allow your frontend's origin
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Specify allowed HTTP methods
+                        .allowedHeaders("*") // Allow all headers
+                        .allowCredentials(true); // Allow cookies and authentication headers
+            }
+        };
     }
 }
