@@ -19,6 +19,10 @@ public class Experience {
 
     @Column(name = "company_name")
     private String companyName;
+    
+    // NEW FIELD
+    @Column(name = "date_range")
+    private String dateRange;
 
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
