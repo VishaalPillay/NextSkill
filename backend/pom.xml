@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
@@ -11,14 +11,12 @@
     <name>NextSkill Backend</name>
     <description>Spring Boot Backend for NextSkill - Phase 1 Complete Resume Parser</description>
 
-    // ...existing code...
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.5</version> <!-- Update this version -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>3.5.5</version> <!-- Updated to a newer version -->
+        <relativePath/> <!-- Look up parent from Maven repo -->
     </parent>
-// ...existing code.....
 
     <properties>
         <java.version>17</java.version>
@@ -116,7 +114,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -134,8 +131,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-
-
 
             <!-- Maven Resources Plugin - For copying NLP models -->
             <plugin>
