@@ -35,9 +35,6 @@ public class ParsedResumeData {
     /**
      * Inner class to represent individual skill data
      */
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
     public static class SkillData {
         private String skillName;
         private String category;
@@ -47,6 +44,37 @@ public class ParsedResumeData {
             this.skillName = skillName;
             this.category = category;
             this.confidenceScore = 1.0; // Default high confidence for manually categorized skills
+        }
+
+        public SkillData(String skillName, String category, double confidenceScore) {
+            this.skillName = skillName;
+            this.category = category;
+            this.confidenceScore = confidenceScore;
+        }
+
+        // Manual getters for Lombok compatibility
+        public String getSkillName() {
+            return this.skillName;
+        }
+
+        public String getCategory() {
+            return this.category;
+        }
+
+        public double getConfidenceScore() {
+            return this.confidenceScore;
+        }
+
+        public void setSkillName(String skillName) {
+            this.skillName = skillName;
+        }
+
+        public void setCategory(String category) {
+            this.category = category;
+        }
+
+        public void setConfidenceScore(double confidenceScore) {
+            this.confidenceScore = confidenceScore;
         }
     }
 
