@@ -28,4 +28,25 @@ public class Project {
     @JoinColumn(name = "resume_id")
     @ToString.Exclude
     private Resume resume;
+
+    // Manual setters and getters for Lombok compatibility
+    public void setResume(Resume resume) {
+        this.resume = resume;
+    }
+
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
+    public void setDateRange(String dateRange) {
+        this.dateRange = dateRange;
+    }
+
+    public String getDateRange() {
+        return this.dateRange;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

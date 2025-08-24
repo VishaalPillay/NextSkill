@@ -69,4 +69,25 @@ public class Resume {
         this.projects.add(project);
         project.setResume(this);
     }
+
+    // Manual setters and getters for Lombok compatibility
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setOriginalFileName(String originalFileName) {
+        this.originalFileName = originalFileName;
+    }
+
+    public Long getId() {
+        return this.id;
+    }
 }

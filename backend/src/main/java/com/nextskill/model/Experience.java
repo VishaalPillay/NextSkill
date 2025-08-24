@@ -31,4 +31,21 @@ public class Experience {
     @JoinColumn(name = "resume_id")
     @ToString.Exclude
     private Resume resume;
+
+    // Manual setters for Lombok compatibility
+    public void setResume(Resume resume) {
+        this.resume = resume;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public void setDateRange(String dateRange) {
+        this.dateRange = dateRange;
+    }
 }
