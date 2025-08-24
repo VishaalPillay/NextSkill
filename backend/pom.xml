@@ -11,12 +11,14 @@
     <name>NextSkill Backend</name>
     <description>Spring Boot Backend for NextSkill - Phase 1 Complete Resume Parser</description>
 
+    // ...existing code...
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
-        <relativePath/> <!-- Look up parent from Maven repo -->
+        <version>3.5.5</version> <!-- Update this version -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+// ...existing code.....
 
     <properties>
         <java.version>17</java.version>
