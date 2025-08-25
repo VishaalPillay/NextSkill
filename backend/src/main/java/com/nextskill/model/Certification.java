@@ -24,17 +24,4 @@ public class Certification {
     @JoinColumn(name = "resume_id")
     @ToString.Exclude
     private Resume resume;
-
-    // Manual setters for Lombok compatibility
-    public void setResume(Resume resume) {
-        this.resume = resume;
-    }
-
-    public void setCertificationName(String certificationName) {
-        this.certificationName = certificationName;
-    }
-
-    public void setIssuingOrganization(String issuingOrganization) {
-        this.issuingOrganization = issuingOrganization;
-    }
 }

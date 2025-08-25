@@ -26,9 +26,4 @@ public class ResumeSkill {
     public ResumeSkill(String skillName) {
         this.skillName = skillName;
     }
-
-    // Manual setter for resume relationship
-    public void setResume(Resume resume) {
-        this.resume = resume;
-    }
 }
