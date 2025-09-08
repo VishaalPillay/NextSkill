@@ -1,0 +1,175 @@
+{"text": "Software Developer at Microsoft", "entities": [[0, 18, "JOB_TITLE"], [22, 31, "ORG"]]}
+{"text": "I work with React and Node.js", "entities": [[12, 21, "SKILL"]]}
+{"text": "Python developer with FastAPI experience", "entities": [[0, 6, "SKILL"], [17, 29, "SKILL"]]}
+{"text": "Full Stack Developer at Google", "entities": [[0, 20, "JOB_TITLE"], [21, 30, "ORG"]]}
+{"text": "I use MongoDB and Express.js for web development", "entities": [[18, 28, "SKILL"]]}
+{"text": "Frontend Developer with React and TypeScript", "entities": [[0, 18, "JOB_TITLE"], [19, 29, "SKILL"], [30, 44, "SKILL"]]}
+{"text": "Backend Engineer at Amazon Web Services", "entities": [[0, 16, "JOB_TITLE"]]}
+{"text": "I have experience with Docker and Kubernetes", "entities": [[23, 33, "SKILL"]]}
+{"text": "Data Scientist at Facebook", "entities": [[0, 14, "JOB_TITLE"], [15, 26, "ORG"]]}
+{"text": "Machine Learning Engineer with TensorFlow", "entities": [[0, 25, "JOB_TITLE"], [26, 41, "SKILL"]]}
+{"text": "Senior Software Engineer at Apple Inc", "entities": [[0, 6, "SKILL"], [7, 25, "JOB_TITLE"], [29, 39, "ORG"]]}
+{"text": "I have 5 years of experience with Java and Spring Boot", "entities": [[35, 39, "SKILL"], [44, 55, "SKILL"]]}
+{"text": "DevOps Engineer at Netflix using AWS and Terraform", "entities": [[0, 13, "JOB_TITLE"], [17, 24, "ORG"], [31, 34, "SKILL"], [39, 48, "SKILL"]]}
+{"text": "Frontend Developer specializing in Vue.js and CSS3", "entities": [[0, 16, "JOB_TITLE"], [35, 41, "SKILL"], [46, 50, "SKILL"]]}
+{"text": "Data Analyst at Spotify working with SQL and Python", "entities": [[0, 11, "JOB_TITLE"], [15, 22, "ORG"], [35, 38, "SKILL"], [43, 49, "SKILL"]]}
+{"text": "Mobile App Developer at Uber using Flutter and Dart", "entities": [[0, 20, "JOB_TITLE"], [24, 28, "ORG"], [35, 42, "SKILL"], [47, 51, "SKILL"]]}
+{"text": "Cloud Architect at Microsoft Azure with Kubernetes experience", "entities": [[0, 13, "JOB_TITLE"], [17, 26, "ORG"], [27, 32, "ORG"], [38, 49, "SKILL"]]}
+{"text": "QA Engineer at Adobe testing with Selenium and Jest", "entities": [[0, 10, "JOB_TITLE"], [14, 19, "ORG"], [35, 43, "SKILL"], [48, 52, "SKILL"]]}
+{"text": "Product Manager at Slack with experience in Agile and Scrum", "entities": [[0, 15, "JOB_TITLE"], [19, 24, "ORG"], [45, 50, "SKILL"], [55, 60, "SKILL"]]}
+{"text": "Cybersecurity Specialist at IBM using Python and Wireshark", "entities": [[0, 22, "JOB_TITLE"], [26, 29, "ORG"], [35, 41, "SKILL"], [46, 55, "SKILL"]]}
+{"text": "UI/UX Designer at Figma with expertise in Sketch and Adobe XD", "entities": [[0, 12, "JOB_TITLE"], [16, 21, "ORG"], [45, 51, "SKILL"], [56, 64, "SKILL"]]}
+{"text": "Blockchain Developer at Coinbase working with Solidity and Web3", "entities": [[0, 18, "JOB_TITLE"], [22, 30, "ORG"], [48, 57, "SKILL"], [62, 66, "SKILL"]]}
+{"text": "AI Research Scientist at OpenAI using PyTorch and TensorFlow", "entities": [[0, 20, "JOB_TITLE"], [24, 30, "ORG"], [36, 43, "SKILL"], [48, 58, "SKILL"]]}
+{"text": "Game Developer at Unity Technologies with C# and Unity3D experience", "entities": [[0, 13, "JOB_TITLE"], [17, 35, "ORG"], [41, 43, "SKILL"], [48, 55, "SKILL"]]}
+{"text": "Salesforce Developer at Salesforce.com using Apex and Lightning", "entities": [[0, 18, "JOB_TITLE"], [22, 35, "ORG"], [41, 45, "SKILL"], [50, 59, "SKILL"]]}
+{"text": "Reg: RA2411003011546", "entities": [[5, 20, "REG_NO"]]}
+{"text": "SRM Registration RA2411003011547", "entities": [[17, 32, "REG_NO"]]}
+{"text": "College Reg No - RA2411003011548", "entities": [[17, 32, "REG_NO"]]}
+{"text": "ID RA2411003011549 issued by SRM", "entities": [[3, 18, "REG_NO"]]}
+{"text": "Student RA2411003011550, CSE Department", "entities": [[8, 23, "REG_NO"]]}
+{"text": "My reg no is RA2411003011551", "entities": [[13, 28, "REG_NO"]]}
+{"text": "SRM ID: RA2411003011552", "entities": [[8, 23, "REG_NO"]]}
+{"text": "Registration: RA2411003011553 verified", "entities": [[14, 29, "REG_NO"]]}
+{"text": "Reg RA2411003011554 for 2024 batch", "entities": [[4, 19, "REG_NO"]]}
+{"text": "RA2411003011555 (SRM) — valid", "entities": [[0, 15, "REG_NO"]]}
+{"text": "Application RA2411003011556 received", "entities": [[12, 27, "REG_NO"]]}
+{"text": "Use RA2411003011557 as your registration", "entities": [[4, 19, "REG_NO"]]}
+{"text": "SRM RegNo RA2411003011558 updated", "entities": [[10, 25, "REG_NO"]]}
+{"text": "Candidate: RA2411003011559, verified", "entities": [[11, 26, "REG_NO"]]}
+{"text": "RA2411003011560 is the correct reg no", "entities": [[0, 15, "REG_NO"]]}
+{"text": "Official reg RA2411003011561 on file", "entities": [[13, 28, "REG_NO"]]}
+{"text": "StudentID RA2411003011562 | Hostel A", "entities": [[10, 25, "REG_NO"]]}
+{"text": "SRM RA2411003011563 admitted to ECE", "entities": [[4, 19, "REG_NO"]]}
+{"text": "Roll: RA2411003011564; Section B", "entities": [[6, 21, "REG_NO"]]}
+{"text": "Profile RA2411003011565 created", "entities": [[8, 23, "REG_NO"]]}
+{"text": "Contact: +91 91234 56789", "entities": [[10, 25, "PHONE"]]}
+{"text": "Mobile: 9123456789", "entities": [[8, 18, "PHONE"]]}
+{"text": "Phone: 09123456789", "entities": [[7, 18, "PHONE"]]}
+{"text": "Call +91-91234-56789", "entities": [[5, 20, "PHONE"]]}
+{"text": "Reach me at 91234 56789", "entities": [[12, 23, "PHONE"]]}
+{"text": "Dial 09123 456789", "entities": [[5, 17, "PHONE"]]}
+{"text": "My number is +919123456789", "entities": [[13, 26, "PHONE"]]}
+{"text": "Whatsapp: +91 9123 456 789", "entities": [[10, 26, "PHONE"]]}
+{"text": "Call me on (0)91234 56789", "entities": [[12, 27, "PHONE"]]}
+{"text": "Mobile no. 91234-56789", "entities": [[11, 22, "PHONE"]]}
+{"text": "Ph: +91 9123456789", "entities": [[4, 19, "PHONE"]]}
+{"text": "Emergency +91-9123456789", "entities": [[10, 25, "PHONE"]]}
+{"text": "Alternate 0 91234 56789", "entities": [[10, 23, "PHONE"]]}
+{"text": "Direct 9123456789 line", "entities": [[7, 17, "PHONE"]]}
+{"text": "Reach at +91 (91234) 56789", "entities": [[9, 27, "PHONE"]]}
+{"text": "Contact 91234.56789 today", "entities": [[8, 20, "PHONE"]]}
+{"text": "Hotline +91 91 2345 6789", "entities": [[8, 24, "PHONE"]]}
+{"text": "Tel (+91)9123456789", "entities": [[5, 20, "PHONE"]]}
+{"text": "Call 0091-9123456789", "entities": [[5, 20, "PHONE"]]}
+{"text": "Mobile: +91-91-2345-6789", "entities": [[8, 24, "PHONE"]]}
+{"text": "Number 091234 56789", "entities": [[7, 19, "PHONE"]]}
+{"text": "+91 91234-56789 (primary)", "entities": [[0, 15, "PHONE"]]}
+{"text": "(0)91234-56789 available", "entities": [[0, 13, "PHONE"]]}
+{"text": "Use 91234 56789 for contact", "entities": [[4, 15, "PHONE"]]}
+{"text": "Phone 91-9123456789 only", "entities": [[6, 21, "PHONE"]]}
+{"text": "Board: +91 9123 456 789", "entities": [[7, 23, "PHONE"]]}
+{"text": "Ping +919123456789", "entities": [[5, 18, "PHONE"]]}
+{"text": "Call at 09123-456789 now", "entities": [[8, 21, "PHONE"]]}
+{"text": "Reach 91234 56 789 quickly", "entities": [[6, 18, "PHONE"]]}
+{"text": "Mobile 9123 456 7890 ok", "entities": [[7, 21, "PHONE"]]}
+{"text": "Contact: +91-9123-456-789", "entities": [[9, 25, "PHONE"]]}
+{"text": "Helpdesk 0912 345 6789", "entities": [[9, 22, "PHONE"]]}
+{"text": "Whatsapp +91 (9123) 456 789", "entities": [[9, 27, "PHONE"]]}
+{"text": "Tel: 0912-345-6789", "entities": [[5, 19, "PHONE"]]}
+{"text": "Mobile 91234 56789.", "entities": [[7, 18, "PHONE"]]}
+{"text": "+91 9123456789", "entities": [[0, 14, "PHONE"]]}
+{"text": "0 9123456789", "entities": [[0, 12, "PHONE"]]}
+{"text": "(+91) 91234 56789", "entities": [[0, 17, "PHONE"]]}
+{"text": "0091 91234 56789", "entities": [[0, 16, "PHONE"]]}
+{"text": "91-91234-56789", "entities": [[0, 14, "PHONE"]]}
+{"text": "Senior Software Engineer at Apple Inc", "entities": [[0, 6, "SKILL"], [7, 25, "JOB_TITLE"], [29, 39, "ORG"]]}
+{"text": "I have 5 years of experience with Java and Spring Boot", "entities": [[35, 39, "SKILL"], [44, 55, "SKILL"]]}
+{"text": "DevOps Engineer at Netflix using AWS and Terraform", "entities": [[0, 13, "JOB_TITLE"], [17, 24, "ORG"], [31, 34, "SKILL"], [39, 48, "SKILL"]]}
+{"text": "Frontend Developer specializing in Vue.js and CSS3", "entities": [[0, 16, "JOB_TITLE"], [35, 41, "SKILL"], [46, 50, "SKILL"]]}
+{"text": "Data Analyst at Spotify working with SQL and Python", "entities": [[0, 11, "JOB_TITLE"], [15, 22, "ORG"], [35, 38, "SKILL"], [43, 49, "SKILL"]]}
+{"text": "Mobile App Developer at Uber using Flutter and Dart", "entities": [[0, 20, "JOB_TITLE"], [24, 28, "ORG"], [35, 42, "SKILL"], [47, 51, "SKILL"]]}
+{"text": "Cloud Architect at Microsoft Azure with Kubernetes experience", "entities": [[0, 13, "JOB_TITLE"], [17, 26, "ORG"], [27, 32, "ORG"], [38, 49, "SKILL"]]}
+{"text": "QA Engineer at Adobe testing with Selenium and Jest", "entities": [[0, 10, "JOB_TITLE"], [14, 19, "ORG"], [35, 43, "SKILL"], [48, 52, "SKILL"]]}
+{"text": "Product Manager at Slack with experience in Agile and Scrum", "entities": [[0, 15, "JOB_TITLE"], [19, 24, "ORG"], [45, 50, "SKILL"], [55, 60, "SKILL"]]}
+{"text": "Cybersecurity Specialist at IBM using Python and Wireshark", "entities": [[0, 22, "JOB_TITLE"], [26, 29, "ORG"], [35, 41, "SKILL"], [46, 55, "SKILL"]]}
+{"text": "UI/UX Designer at Figma with expertise in Sketch and Adobe XD", "entities": [[0, 12, "JOB_TITLE"], [16, 21, "ORG"], [45, 51, "SKILL"], [56, 64, "SKILL"]]}
+{"text": "Blockchain Developer at Coinbase working with Solidity and Web3", "entities": [[0, 18, "JOB_TITLE"], [22, 30, "ORG"], [48, 57, "SKILL"], [62, 66, "SKILL"]]}
+{"text": "AI Research Scientist at OpenAI using PyTorch and TensorFlow", "entities": [[0, 20, "JOB_TITLE"], [24, 30, "ORG"], [36, 43, "SKILL"], [48, 58, "SKILL"]]}
+{"text": "Game Developer at Unity Technologies with C# and Unity3D experience", "entities": [[0, 13, "JOB_TITLE"], [17, 35, "ORG"], [41, 43, "SKILL"], [48, 55, "SKILL"]]}
+{"text": "Salesforce Developer at Salesforce.com using Apex and Lightning", "entities": [[0, 18, "JOB_TITLE"], [22, 35, "ORG"], [41, 45, "SKILL"], [50, 59, "SKILL"]]}
+{"text": "PENDLIMARRI REDDY CHETHAN's registration number is RA2411003011531, and the mail id is reddychethanp@gmail.com.", "entities": [[51, 66, "REG_NO"], [87, 110, "EMAIL"]]}
+{"text": "The registration no is RA2411003011531 and email is reddychethanp@gmail.com", "entities": [[23, 38, "REG_NO"], [52, 75, "EMAIL"]]}
+{"text": "Reg No: RA2411003011531; Mail ID: reddychethanp@gmail.com", "entities": [[8, 23, "REG_NO"], [34, 57, "EMAIL"]]}
+{"text": "RA2411003011531 is the reg no; contact email: reddychethanp@gmail.com.", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011532 is the reg no; contact email: anuragbharratdwaj@gmail.com (student: ANURAG KUMAR)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011533 is the reg no; contact email: fernandesryan214@gmail.com (student: RYAN SUNIL FERNANDES)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
+{"text": "RA2411003011534 is the reg no; contact email: usmani.mohamd@gmail.com (student: ABDUL HAMEED USMANI)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011535 is the reg no; contact email: dmadhan92@gmail.com (student: MADHAN D)", "entities": [[0, 15, "REG_NO"], [46, 65, "EMAIL"]]}
+{"text": "RA2411003011536 is the reg no; contact email: aaravpilania2006@gmail.com (student: AARAV PILANIA)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
+{"text": "RA2411003011537 is the reg no; contact email: kingsaver62@gmail.com (student: RAGHU PRASAD MANOJ KASYAP)", "entities": [[0, 15, "REG_NO"], [46, 67, "EMAIL"]]}
+{"text": "RA2411003011538 is the reg no; contact email: suhanis1625@gmail.com (student: SUHANI SINGH)", "entities": [[0, 15, "REG_NO"], [46, 67, "EMAIL"]]}
+{"text": "RA2411003011539 is the reg no; contact email: kandukurivishnusri@gmail.com (student: K VISHNU SRI)", "entities": [[0, 15, "REG_NO"], [46, 74, "EMAIL"]]}
+{"text": "RA2411003011540 is the reg no; contact email: mvarshithcherry@gmail.com (student: MADDALA VENKATA SAI MEHAR VARSHITH)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011541 is the reg no; contact email: sricharan4878@gmail.com (student: BANDARU CHAITANYA SATYA SRI CHARAN)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011542 is the reg no; contact email: chauhanaditya3528@gmail.com (student: ADITYA SINGH CHAUHAN)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011543 is the reg no; contact email: yaswanthudisi9896@gmail.com (student: UDISI YASWANTH VEERA VENKATA SATYANARAYANA)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011544 is the reg no; contact email: vaishnavijagtap8106@gmail.com (student: VAISHNAVI GANESH JAGTAP)", "entities": [[0, 15, "REG_NO"], [46, 75, "EMAIL"]]}
+{"text": "RA2411003011545 is the reg no; contact email: chauhan.prithvi1809@gmail.com (student: PRITHVI CHAUHAN)", "entities": [[0, 15, "REG_NO"], [46, 75, "EMAIL"]]}
+{"text": "RA2411003011547 is the reg no; contact email: sreejoysaha27@gmail.com (student: SREEJOY SAHA)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011548 is the reg no; contact email: ravikiranmeenavilli2006@gmail.com (student: MEENAVILLI RAVI KIRAN)", "entities": [[0, 15, "REG_NO"], [46, 79, "EMAIL"]]}
+{"text": "RA2411003011549 is the reg no; contact email: faseehuddinmohammad@gmail.com (student: MOHAMMAD FASEEHUDDIN)", "entities": [[0, 15, "REG_NO"], [46, 76, "EMAIL"]]}
+{"text": "RA2411003011550 is the reg no; contact email: krishnantanay23@gmail.com (student: TANAY KRISHNAN)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011551 is the reg no; contact email: Priyanshu388raj@gmail.com (student: PRIYANSHU RAJ)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011552 is the reg no; contact email: varun30.neelam@gmail.com (student: NEELAM VARUN TEJA)", "entities": [[0, 15, "REG_NO"], [46, 70, "EMAIL"]]}
+{"text": "RA2411003011553 is the reg no; contact email: jayeshdhupar111@gmail.com (student: JAYESH DHUPAR)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011554 is the reg no; contact email: prudhvikrishna0607@gmail.com (student: GUMMUDU VENKATA PRUDHVI KRISHNA)", "entities": [[0, 15, "REG_NO"], [46, 74, "EMAIL"]]}
+{"text": "RA2411003011555 is the reg no; contact email: kunaldayma.16@gmail.com (student: KUNAL GOVIND DAYMA)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011556 is the reg no; contact email: adyanshu78@gmail.com (student: ADYANSHU SINGH)", "entities": [[0, 15, "REG_NO"], [46, 66, "EMAIL"]]}
+{"text": "RA2411003011557 is the reg no; contact email: hemrajbhirud111@gmail.com (student: BHIRUD HEMRAJ NITIN)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011558 is the reg no; contact email: krishkavin7512@gmail.com (student: KAVIN KRISH VIJAYAKUMAR)", "entities": [[0, 15, "REG_NO"], [46, 70, "EMAIL"]]}
+{"text": "RA2411003011559 is the reg no; contact email: kumarhrishav9@gmail.com (student: KUMAR HRISHAV)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011560 is the reg no; contact email: aliahmedflexwala@gmail.com (student: ALI AHMED FLEXWALA)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
+{"text": "RA2411003011561 is the reg no; contact email: hastik2003@gmail.com (student: HASTIK PANGI)", "entities": [[0, 15, "REG_NO"], [46, 66, "EMAIL"]]}
+{"text": "RA2411003011562 is the reg no; contact email: yashmulajkar05@gmail.com (student: YASH ARUN MULAJKAR)", "entities": [[0, 15, "REG_NO"], [46, 70, "EMAIL"]]}
+{"text": "RA2411003011563 is the reg no; contact email: bigneshsahu5@gmail.com (student: BIGNESH SAHU)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011564 is the reg no; contact email: karurnikhil2507@gmail.com (student: KARUR NIKHIL)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011565 is the reg no; contact email: shauryaaojha@gmail.com (student: SHAURYA OJHA)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011566 is the reg no; contact email: swaralipatil576@gmail.com (student: SWARALI SACHIN PATIL)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011567 is the reg no; contact email: srivastavaaaditya3112@gmail.com (student: AADITYA SRIVASTAVA)", "entities": [[0, 15, "REG_NO"], [46, 78, "EMAIL"]]}
+{"text": "RA2411003011568 is the reg no; contact email: parkaviparkavi555@gmail.com (student: B PARKAVI)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011569 is the reg no; contact email: agrawalniyati14@gmail.com (student: NIYATI AGRAWAL)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011570 is the reg no; contact email: nik.jrx@gmail.com (student: NIKHIL GANESH)", "entities": [[0, 15, "REG_NO"], [46, 63, "EMAIL"]]}
+{"text": "RA2411003011571 is the reg no; contact email: aksharaverma8747@gmail.com (student: AKSHARA VERMA)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
+{"text": "RA2411003011572 is the reg no; contact email: sakshamt1304@gmail.com (student: SAKSHAM TIWARI)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011573 is the reg no; contact email: aishwaryaaprakash88@gmail.com (student: AISHWARYA S PRAKASH)", "entities": [[0, 15, "REG_NO"], [46, 75, "EMAIL"]]}
+{"text": "RA2411003011574 is the reg no; contact email: nikhilbalamurugan@gmail.com (student: NIKHIL BALAMURUGAN)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011575 is the reg no; contact email: jamilirohit2006@gmail.com (student: JAMILI POORNA CHANDRA VENKATA ROHIT)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011576 is the reg no; contact email: vishaalpillay19@gmail.com (student: M VISHAAL PILLAY)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011577 is the reg no; contact email: Pakashvarma2374@gmail.com (student: PENMETSA AKASH VARMA)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011578 is the reg no; contact email: aasmitharoyal@gmail.com (student: ANCHA ASMITHA ROYAL)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011579 is the reg no; contact email: krishmantry4@gmail.com (student: KRISH R MANTRY)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011580 is the reg no; contact email: sjahanvi027@gmail.com (student: JAHANVI SINGH)", "entities": [[0, 15, "REG_NO"], [46, 67, "EMAIL"]]}
+{"text": "RA2411003011581 is the reg no; contact email: divijavikaspawar01@gmail.com (student: DIVIJA VIKAS PAWAR)", "entities": [[0, 15, "REG_NO"], [46, 74, "EMAIL"]]}
+{"text": "RA2411003011582 is the reg no; contact email: dsubhasish201@gmail.com (student: SUBHASISH DEBNATH)", "entities": [[0, 15, "REG_NO"], [46, 69, "EMAIL"]]}
+{"text": "RA2411003011583 is the reg no; contact email: mohammedmazin9000@gmail.com (student: MOHAMED MAZIN)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011585 is the reg no; contact email: singhchandrapratap593@gmail.com (student: CHANDRA PRATAP SINGH)", "entities": [[0, 15, "REG_NO"], [46, 77, "EMAIL"]]}
+{"text": "RA2411003011586 is the reg no; contact email: adity810a@gmail.com (student: ADITYA RAJ SINGH)", "entities": [[0, 15, "REG_NO"], [46, 65, "EMAIL"]]}
+{"text": "RA2411003011587 is the reg no; contact email: nilanshusinha16@gmail.com (student: NILANSHU RAJ)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011588 is the reg no; contact email: nav.streetsmart@gmail.com (student: NAVEEN)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011589 is the reg no; contact email: Sanjay2005d@gmail.com (student: SANJAY S)", "entities": [[0, 15, "REG_NO"], [46, 67, "EMAIL"]]}
+{"text": "RA2411003011590 is the reg no; contact email: palukuruanusha09@gmail.com (student: PALUKURU ANUSHA)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
+{"text": "RA2411003011591 is the reg no; contact email: saisujan0703@gmail.com (student: MALEPATI SAI SUJAN BALAJI)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011592 is the reg no; contact email: vanshpatel1456@gmail.com (student: VANSH PATEL)", "entities": [[0, 15, "REG_NO"], [46, 70, "EMAIL"]]}
+{"text": "RA2411003011593 is the reg no; contact email: aditisahu152006@gmail.com (student: ADITI SAHU)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011594 is the reg no; contact email: vedanshagrawalgwl@gmail.com (student: VEDANSH AGRAWAL)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011595 is the reg no; contact email: sarthaksanket1234@gmail.com (student: SARTHAK SANKET)", "entities": [[0, 15, "REG_NO"], [46, 73, "EMAIL"]]}
+{"text": "RA2411003011596 is the reg no; contact email: aryansharmaaa932@gmail.com (student: ARYAN SHARMA)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
+{"text": "RA2411003011597 is the reg no; contact email: prarthanap09110@gmail.com (student: PRARTHANA P)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011598 is the reg no; contact email: reet.kathuria23@gmail.com (student: REET KATHURIA)", "entities": [[0, 15, "REG_NO"], [46, 71, "EMAIL"]]}
+{"text": "RA2411003011599 is the reg no; contact email: shivenrdra2277@gmail.com (student: SHIVENDRA PRATAP SINGH)", "entities": [[0, 15, "REG_NO"], [46, 70, "EMAIL"]]}
+{"text": "RA2411003011600 is the reg no; contact email: s.samith2006@gmail.com (student: SINDE SAMITH)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011601 is the reg no; contact email: malaypal954@gmail.com (student: MALAY PAL)", "entities": [[0, 15, "REG_NO"], [46, 67, "EMAIL"]]}
+{"text": "RA2411003011602 is the reg no; contact email: maitreyishandilya29@gmail.com (student: MAITREYI)", "entities": [[0, 15, "REG_NO"], [46, 75, "EMAIL"]]}
+{"text": "RA2411003011603 is the reg no; contact email: manthiyash92@gmail.com (student: MANTHI YESWANTH)", "entities": [[0, 15, "REG_NO"], [46, 68, "EMAIL"]]}
+{"text": "RA2411003011604 is the reg no; contact email: Vardhanadithya90@gmail.com (student: TELLA ADITHYA VARDHAN REDDY)", "entities": [[0, 15, "REG_NO"], [46, 72, "EMAIL"]]}
