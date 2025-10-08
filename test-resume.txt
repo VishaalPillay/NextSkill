@@ -1,0 +1,32 @@
+John Smith
+Software Engineer
+
+Email: john.smith@email.com
+Phone: +1-555-123-4567
+
+EXPERIENCE
+Senior Software Engineer at Google
+March 2020 - Present
+• Developed scalable web applications using React and Node.js
+• Implemented microservices architecture with Spring Boot
+• Worked with PostgreSQL and MongoDB databases
+• Used Docker and Kubernetes for containerization
+
+Software Developer at Microsoft
+January 2018 - February 2020
+• Built REST APIs using Java and Spring Framework
+• Developed frontend applications with JavaScript and Angular
+• Worked with AWS cloud services
+• Used Git for version control
+
+SKILLS
+Programming Languages: Java, Python, JavaScript, TypeScript
+Frameworks: Spring Boot, React, Angular, Node.js
+Databases: PostgreSQL, MongoDB, MySQL
+Cloud: AWS, Docker, Kubernetes
+Tools: Git, Maven, Jenkins
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Berkeley
+2014 - 2018

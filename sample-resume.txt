@@ -1,0 +1,50 @@
+JOHN DOE
+Software Developer
+Email: john.doe@email.com
+Phone: (555) 123-4567
+
+SUMMARY
+Experienced Full Stack Developer with 3+ years of experience in web development. 
+Passionate about creating scalable applications using modern technologies.
+
+TECHNICAL SKILLS
+Programming Languages: Java, Python, JavaScript, TypeScript
+Frontend: React, Angular, HTML5, CSS3, Bootstrap
+Backend: Spring Boot, Node.js, Express.js, Django
+Databases: PostgreSQL, MongoDB, MySQL
+Cloud & DevOps: AWS, Docker, Kubernetes, Jenkins
+Tools: Git, Maven, npm, Webpack
+
+WORK EXPERIENCE
+
+Senior Software Developer | Tech Solutions Inc. | 2022 - Present
+• Developed and maintained web applications using React and Spring Boot
+• Implemented RESTful APIs serving 10,000+ daily active users
+• Collaborated with cross-functional teams using Agile methodologies
+• Optimized database queries resulting in 40% performance improvement
+
+Software Developer | StartUp Co. | 2021 - 2022
+• Built responsive web applications using Angular and Node.js
+• Integrated third-party APIs and payment gateways
+• Wrote unit tests achieving 85% code coverage
+• Participated in code reviews and mentored junior developers
+
+PROJECTS
+
+E-Commerce Platform
+• Developed full-stack e-commerce application using React, Node.js, and MongoDB
+• Implemented user authentication, shopping cart, and payment processing
+• Deployed on AWS using Docker containers
+
+Task Management System
+• Created project management tool using Spring Boot and PostgreSQL
+• Built real-time notifications using WebSocket technology
+• Implemented role-based access control and reporting features
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology | 2017 - 2021
+
+CERTIFICATIONS
+• AWS Certified Developer Associate
+• Oracle Certified Professional Java SE 11 Developer

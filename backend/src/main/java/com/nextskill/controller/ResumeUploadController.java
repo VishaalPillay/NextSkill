@@ -2,6 +2,7 @@ package com.nextskill.controller;
 
 import com.nextskill.model.Resume;
 import com.nextskill.service.ResumeService;
+import com.nextskill.service.HybridSkillGapService;
 import lombok.RequiredArgsConstructor;
 import org.apache.tika.exception.TikaException;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/resume")
+@RequestMapping("/api/resume-old")
 // The @CrossOrigin annotation has been removed to rely on the global WebConfig.
 @RequiredArgsConstructor
 public class ResumeUploadController {

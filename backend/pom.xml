@@ -90,6 +90,12 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
+        <!-- Spring Security for CSRF protection -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <!-- Spring Boot Test - Testing framework -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -108,6 +114,13 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+        
+        <!-- Commons Text for HTML escaping -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.11.0</version>
         </dependency>
 
     </dependencies>

@@ -1,6 +1,7 @@
 package com.nextskill.service;
 
 import com.nextskill.dto.PythonNLPResponse;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.HttpEntity;
@@ -13,8 +14,8 @@ import java.util.Map;
 public class PythonNLPClient {
 
     private final RestTemplate restTemplate = new RestTemplate();
-    // This is the URL of the Python service we created.
-    private final String pythonServiceUrl = "http://localhost:5000/parse";
+    @Value("${nlp.service.url:http://localhost:5000}")
+    private String pythonServiceUrl;
 
     public PythonNLPResponse parseResumeText(String rawText) {
         HttpHeaders headers = new HttpHeaders();
@@ -25,6 +26,6 @@ public class PythonNLPClient {
         HttpEntity<Map<String, String>> request = new HttpEntity<>(requestBody, headers);
 
         // Call the Python service and get the parsed data back
-        return restTemplate.postForObject(pythonServiceUrl, request, PythonNLPResponse.class);
+        return restTemplate.postForObject(pythonServiceUrl + "/parse", request, PythonNLPResponse.class);
     }
 }

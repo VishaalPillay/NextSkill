@@ -40,16 +40,17 @@ def load_nlp() -> Language:
                 nlp_model = spacy.load(str(model_path))
                 ML_AVAILABLE = True
                 return nlp_model
-        except Exception:
-            # try next candidate
-            pass
+        except Exception as e:
+            print(f"Failed to load model from {model_path}: {e}")
+            continue
 
     # Try lightweight default model
     try:
         nlp_model = spacy.load("en_core_web_sm")
         ML_AVAILABLE = False  # using default model; treat ML as unavailable
         return nlp_model
-    except Exception:
+    except Exception as e:
+        print(f"Failed to load en_core_web_sm: {e}")
         # Last-resort blank pipeline
         ML_AVAILABLE = False
         return spacy.blank("en")
@@ -210,9 +211,8 @@ def canonical_skill(token: str) -> str:
     # Title-case for typical names, but preserve casing of known acronyms
     if t.upper() in {"AWS", "GCP"}:
         return t.upper()
-    if t.lower() in {"c++", "c#", ".net"}:
-        return t
-    return t[:1].upper() + t[1:]
+    # Return the original token if no special handling needed
+    return t
 
 
 def extract_email_spacy(doc) -> str:
@@ -700,6 +700,102 @@ def parse_resume():
     except Exception as e:
         # Never leak stack traces; return concise error
         return jsonify({"error": "Parsing error", "detail": str(e)}), 500
+
+
+@app.route("/parse-job", methods=["POST"])
+def parse_job_description():
+    """
+    Parse job description to extract required skills, job titles, and companies.
+    Similar to resume parsing but focused on job requirements.
+    """
+    try:
+        data = request.get_json(silent=True) or {}
+        job_text = data.get("text", "")
+        if not isinstance(job_text, str) or not job_text.strip():
+            return jsonify({"error": "Invalid request. 'text' field is required."}), 400
+
+        # Use existing NLP pipeline
+        doc = nlp(job_text)
+
+        # Extract entities using existing functions
+        ml_skills, ml_titles, ml_orgs = (set(), set(), set())
+        if HYBRID_USE_ML and ML_AVAILABLE:
+            ml_skills, ml_titles, ml_orgs = extract_entities_ml(doc)
+
+        # EntityRuler-based skills
+        ruler_skills = set()
+        if ENTITY_RULER is not None:
+            try:
+                doc_r = nlp(job_text)
+                for ent in getattr(doc_r, "ents", []):
+                    if ent.label_ == "SKILL":
+                        s = canonical_skill(ent.text)
+                        if s.lower() not in SKILL_STOPWORDS:
+                            ruler_skills.add(s)
+            except Exception:
+                pass
+
+        # Dictionary-based skills
+        dict_skills = extract_skills_dict(job_text)
+
+        # Merge all skills
+        required_skills = merge_sets(ml_skills, dict_skills, ruler_skills)
+
+        response_data = {
+            "requiredSkills": [{"skillName": skill} for skill in required_skills],
+            "jobTitles": list(ml_titles),
+            "companies": list(ml_orgs),
+            "totalSkills": len(required_skills)
+        }
+        return jsonify(response_data)
+
+    except Exception as e:
+        return jsonify({"error": "Job parsing error", "detail": str(e)}), 500
+
+
+@app.route("/compare-skills", methods=["POST"])
+def compare_skills():
+    """
+    Compare resume skills with job requirements to identify gaps and matches.
+    """
+    try:
+        data = request.get_json(silent=True) or {}
+        resume_skills = set(data.get("resumeSkills", []))
+        job_skills = set(data.get("jobSkills", []))
+
+        if not resume_skills or not job_skills:
+            return jsonify({"error": "Both resumeSkills and jobSkills are required"}), 400
+
+        # Normalize skills for better matching
+        normalized_resume = {canonical_skill(skill) for skill in resume_skills}
+        normalized_job = {canonical_skill(skill) for skill in job_skills}
+
+        # Simple matching algorithm
+        matched = normalized_resume.intersection(normalized_job)
+        missing = normalized_job - normalized_resume
+        additional = normalized_resume - normalized_job
+
+        # Calculate match percentage
+        match_percentage = (len(matched) / len(normalized_job) * 100) if normalized_job else 0
+
+        response_data = {
+            "matchedSkills": sorted(list(matched)),
+            "missingSkills": sorted(list(missing)),
+            "additionalSkills": sorted(list(additional)),
+            "matchPercentage": round(match_percentage, 2),
+            "totalRequired": len(normalized_job),
+            "totalMatched": len(matched),
+            "analysis": {
+                "strongMatch": match_percentage >= 80,
+                "goodMatch": 60 <= match_percentage < 80,
+                "partialMatch": 40 <= match_percentage < 60,
+                "weakMatch": match_percentage < 40
+            }
+        }
+        return jsonify(response_data)
+
+    except Exception as e:
+        return jsonify({"error": "Skill comparison error", "detail": str(e)}), 500
 
 
 if __name__ == "__main__":

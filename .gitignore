@@ -11,4 +11,17 @@ target/
 .DS_Store
 Thumbs.db
 
+# Configuration files with sensitive data
 application.properties
+application-dev.properties
+application-prod.properties
+.env
+
+# API Keys and secrets
+*.key
+*.pem
+secrets/
+
+# Logs
+logs/
+*.log
