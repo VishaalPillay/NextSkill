@@ -1,8 +1,6 @@
 package com.nextskill.service;
 
-import com.nextskill.dto.PythonNLPResponse;
 import com.nextskill.model.Resume;
-import com.nextskill.model.ResumeSkill;
 import com.nextskill.repository.ResumeRepository;
 import org.apache.tika.Tika;
 import org.apache.tika.exception.TikaException;
@@ -15,35 +13,36 @@ import java.io.IOException;
 public class ResumeService {
 
     private final ResumeRepository resumeRepository;
-    private final PythonNLPClient pythonNLPClient; // <-- DEPENDENCY HAS CHANGED
-    private final Tika tika = new Tika();
+    private final NLPService nlpService;
+    private final Tika tika;
 
-    public ResumeService(ResumeRepository resumeRepository, PythonNLPClient pythonNLPClient) {
+    // The constructor now correctly injects all required services (ResumeRepository and NLPService).
+    public ResumeService(ResumeRepository resumeRepository, NLPService nlpService) {
         this.resumeRepository = resumeRepository;
-        this.pythonNLPClient = pythonNLPClient;
+        this.nlpService = nlpService;
+        this.tika = new Tika(); // Initialize Tika here
     }
 
+    /**
+     * Processes an uploaded resume file by extracting its text, parsing it for structured data,
+     * and saving it to the database.
+     *
+     * @param file The uploaded MultipartFile.
+     * @return The saved Resume entity with a generated ID.
+     * @throws IOException   if there is an error reading the file.
+     * @throws TikaException if there is an error parsing the file content.
+     */
     public Resume processAndSaveResume(MultipartFile file) throws IOException, TikaException {
-        // Step 1: Extract raw text with Tika (this part is unchanged)
+        // Step 1: Extract raw text content from the file using Apache Tika.
         String rawText = tika.parseToString(file.getInputStream());
 
-        // Step 2: Call our new Python service to get structured NLP data
-        PythonNLPResponse parsedData = pythonNLPClient.parseResumeText(rawText);
+        // Step 2: Pass the raw text to the NLPService to get a fully parsed and structured Resume object.
+        Resume parsedResume = nlpService.parseResumeText(rawText);
 
-        // Step 3: Map the data from the Python service to our Java database models
-        Resume resume = new Resume();
-        resume.setOriginalFileName(file.getOriginalFilename());
-        resume.setFullName(parsedData.getFullName());
-        resume.setEmail(parsedData.getEmail());
-        resume.setPhoneNumber(parsedData.getPhoneNumber());
+        // Step 3: Set metadata that wasn't available during parsing (like the original filename).
+        parsedResume.setOriginalFileName(file.getOriginalFilename());
 
-        if (parsedData.getSkills() != null) {
-            for (PythonNLPResponse.SkillData skillData : parsedData.getSkills()) {
-                resume.addSkill(new ResumeSkill(skillData.getSkillName()));
-            }
-        }
-        
-        // Step 4: Save the fully structured Resume object to the database.
-        return resumeRepository.save(resume);
+        // Step 4: Save the complete, structured Resume object to the database via the repository.
+        return resumeRepository.save(parsedResume);
     }
 }

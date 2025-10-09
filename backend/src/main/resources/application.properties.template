@@ -23,4 +23,3 @@ spring.servlet.multipart.max-request-size=10MB
 # logging
 logging.level.com.nextskill=DEBUG
 logging.level.org.springframework.web=DEBUG
-
